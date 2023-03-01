@@ -1,4 +1,4 @@
-<h1><a name="cli">World cli</a></h1>
+<h1><a name="cli_reactor">World cli-reactor</a></h1>
 <ul>
 <li>Imports:
 <ul>
@@ -14,14 +14,6 @@
 <li>interface <a href="#environment"><code>environment</code></a></li>
 <li>interface <a href="#environment_preopens"><code>environment-preopens</code></a></li>
 <li>interface <a href="#exit"><code>exit</code></a></li>
-<li>type <a href="#input_stream"><code>input-stream</code></a></li>
-<li>type <a href="#output_stream"><code>output-stream</code></a></li>
-<li>type <a href="#descriptor"><code>descriptor</code></a></li>
-</ul>
-</li>
-<li>Exports:
-<ul>
-<li>function <a href="#command"><code>command</code></a></li>
 </ul>
 </li>
 </ul>
@@ -1569,30 +1561,4 @@ values each time it is called.</p>
 <h5>Params</h5>
 <ul>
 <li><a name="exit.status"><code>status</code></a>: result</li>
-</ul>
-<h2>Exported types from world <a href="#cli"><code>cli</code></a></h2>
-<hr />
-<h3>Types</h3>
-<h4><a name="input_stream"><code>type input-stream</code></a></h4>
-<p><a href="#input_stream"><a href="#input_stream"><code>input-stream</code></a></a></p>
-<p>
-#### <a name="output_stream">`type output-stream`</a>
-[`output-stream`](#output_stream)
-<p>
-#### <a name="descriptor">`type descriptor`</a>
-[`descriptor`](#descriptor)
-<p>
-## Exported functions from world `cli`
-<h4><a name="command"><code>command: func</code></a></h4>
-<h5>Params</h5>
-<ul>
-<li><a name="command.stdin"><code>stdin</code></a>: <a href="#input_stream"><a href="#input_stream"><code>input-stream</code></a></a></li>
-<li><a name="command.stdout"><code>stdout</code></a>: <a href="#output_stream"><a href="#output_stream"><code>output-stream</code></a></a></li>
-<li><a name="command.stderr"><code>stderr</code></a>: <a href="#output_stream"><a href="#output_stream"><code>output-stream</code></a></a></li>
-<li><a name="command.args"><code>args</code></a>: list&lt;<code>string</code>&gt;</li>
-<li><a name="command.preopens"><a href="#preopens"><code>preopens</code></a></a>: list&lt;(<a href="#descriptor"><a href="#descriptor"><code>descriptor</code></a></a>, <code>string</code>)&gt;</li>
-</ul>
-<h5>Return values</h5>
-<ul>
-<li><a name="command.0"></a> result</li>
 </ul>
